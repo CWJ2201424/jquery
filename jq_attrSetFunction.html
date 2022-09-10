@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<body>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <script src= "jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('img').attr({
+            alt: 'jquery 라이브러리를 사용한 속성 지정',
+            src: function (index) {
+                var size = (index + 1) * 100;
+                return 'https://place-hold.it/' + size + "x100";
+            },
+          });
+        });
+    </script>
+</body>
+</html>

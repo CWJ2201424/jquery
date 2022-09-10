@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<body>
+    <button>Toggle Show</button>
+    <div class="page">
+        <h1>태그가 사라졌다가 나타나는 효과입니다.</h1>
+        <p>fadeToggle('slow') 태그가 0.6초 간격으로 실행됩니다.</p>
+    </div>
+    <script src= "jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('.page').fadeToggle('slow');
+            });
+        });
+    </script>
+</body>
+</html>
